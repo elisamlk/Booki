@@ -63,6 +63,7 @@ body {
 
 .navigation img{
     object-fit: cover; 
+    width:100px;
 }
 
 ul{
@@ -179,5 +180,41 @@ li{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .main-container{
+        padding:0;
+    }
+    .navigation img{
+      padding:20px;
+    }
+.navigation{
+    flex-direction:column;
+    
+}
+nav{
+    width:100%;
+}
+li{
+    margin:0;
+   
+}
+ul{
+  
+    padding:0;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.populaires-cards{
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    
+}
+.populaires-cards .card {
+    
+    width:100%;
+}
+  
 }
