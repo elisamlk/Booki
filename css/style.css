@@ -120,7 +120,8 @@ input{
 .filters-display{
     display:flex;
     flex-wrap: wrap;
-    margin-top:20px;
+    margin:20px 0 20px 0;
+    
 }
 
 .filter{
@@ -157,6 +158,29 @@ input{
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements .card{
+    margin-top: 33px;
+   width:250px;
+
+}
+
+.hebergements img{
+    width:100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height:100px;
+}
+
+.hebergements-cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+    
+  
+
 }
 
 /****** Populaires ***********/
