@@ -84,9 +84,12 @@ h2{
    margin:50px 0 5px 0;
 }
 
+/****** Barre de recherche ***********/
+
 .search-bar{
     display:flex;
-    margin-top:20px;
+    margin:20px 0 20px 0;
+
 }
 
 .fa-location-dot{
@@ -110,6 +113,31 @@ input{
     border:none;
     border-top:solid var(--main-bg-color) 1px;
     border-bottom: solid var(--main-bg-color) 1px;
+}
+
+/****** Filtres ***********/
+
+.filters-display{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top:20px;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    border:solid var(--main-bg-color) 1px;
+    padding:10px;
+    border-radius: 20px;
+    margin-right:15px;
+}
+
+.filter:hover{
+    background-color: var(--filter-bg-color);
+}
+
+.filter i {
+    margin-right:10px;
 }
 
 
