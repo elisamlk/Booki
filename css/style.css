@@ -161,7 +161,7 @@ input {
 
 .hebergements .card {
   margin-top: 33px;
-  width: 250px;
+  width: 30%;
 }
 
 .hebergements img {
@@ -287,6 +287,10 @@ input {
     justify-content: center;
   }
   .populaires-cards .card {
+    width: 100%;
+  }
+
+  .hebergements-cards .card {
     width: 100%;
   }
 }
