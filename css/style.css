@@ -161,7 +161,7 @@ input {
 
 .hebergements .card {
   margin-top: 33px;
-  width: 30%;
+  width: 31%;
 }
 
 .hebergements img {
@@ -175,6 +175,15 @@ input {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+.hebergements .card-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.hebergements .card-rating {
+  margin-bottom: 5px;
 }
 
 /****** Populaires ***********/
