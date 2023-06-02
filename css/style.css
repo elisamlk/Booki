@@ -84,10 +84,16 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: var(--main-color);
 }
 
 h1 {
-  margin: 50px 0 5px 0;
+  margin: 50px 0 10px 0;
+  font-size: 22px;
 }
 
 /****** Barre de recherche ***********/
@@ -281,6 +287,19 @@ footer ul {
   display: flex;
   flex-direction: column;
   list-style: none;
+  margin-bottom: 25px;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+.footer-list {
+  margin-right: 150px;
+}
+
+.footer-list li{
+  margin-bottom:5px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -346,11 +365,34 @@ footer ul {
   }
   .nav-link {
     margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .nav-link a {
+    width: 100%;
   }
   .nav-bar {
     padding: 0;
     display: flex;
     justify-content: space-around;
+    margin-top: 30px;
+    border-width: 0px 0px 3px 0px;
+    border-style: solid;
+    border-color: #f2f2f2;
+  }
+
+  .nav-bar:hover {
+    color: var(--main-color);
+  }
+  .search-bar {
+    justify-content: center;
+  }
+
+  .filters-display {
+    justify-content: center;
+  }
+  .filter {
+    width: 120px;
   }
 
   .populaires-cards {
@@ -372,5 +414,8 @@ footer ul {
 
   footer {
     flex-direction: column;
+  }
+  .footer-list {
+    margin-right: 0;
   }
 }
