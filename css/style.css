@@ -55,6 +55,10 @@ body {
   color: var(--main-bg-color);
 }
 
+.card-content {
+  padding-left: 15px;
+}
+
 /****** Header ***********/
 
 .navigation {
@@ -69,12 +73,12 @@ body {
   width: 100px;
 }
 
-ul {
+.nav-bar {
   display: flex;
   list-style: none;
 }
 
-li {
+.nav-link {
   margin-left: 100px;
 }
 
@@ -82,7 +86,7 @@ a {
   text-decoration: none;
 }
 
-h2 {
+h1 {
   margin: 50px 0 5px 0;
 }
 
@@ -186,10 +190,9 @@ input {
   margin-bottom: 5px;
 }
 
-.link{
+.link {
   text-decoration: none;
-  color:black;
-
+  color: black;
 }
 
 /****** Populaires ***********/
@@ -238,35 +241,47 @@ input {
 }
 
 /****** Activités ***********/
-.activites{
+.activites {
   padding: 30px;
   box-sizing: border-box;
 }
 
-.activites-card{
-  width:100%;
+.activites-card {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-justify-content: space-between;
-margin-top: 33px;
+  justify-content: space-between;
+  margin-top: 33px;
 }
 
-.activites-card .card{
-  width:23%;
-
+.activites-card .card {
+  width: 23%;
 }
 
-.activites-card img{
-  width:100%;
-  height:300px;
+.activites-card img {
+  width: 100%;
+  height: 300px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
-.activites-card .card-title{
-  padding:20px;
+.activites-card .card-title {
+  padding: 20px;
 }
 
+/****** Footer ***********/
+footer {
+  display: flex;
+  background-color: var(--main-bg-color);
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -303,6 +318,16 @@ margin-top: 33px;
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
+
+  .activites-card img {
+    height: 100px;
+  }
+  .activites-card .card-title {
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    padding-left: 15px;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -319,10 +344,10 @@ margin-top: 33px;
   nav {
     width: 100%;
   }
-  li {
+  .nav-link {
     margin: 0;
   }
-  ul {
+  .nav-bar {
     padding: 0;
     display: flex;
     justify-content: space-around;
@@ -338,5 +363,14 @@ margin-top: 33px;
 
   .hebergements-cards .card {
     width: 100%;
+  }
+
+  .activites-card .card {
+    width: 100%;
+    margin-top: 33px;
+  }
+
+  footer {
+    flex-direction: column;
   }
 }
