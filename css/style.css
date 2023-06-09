@@ -51,7 +51,7 @@ body {
   font-weight: 700;
 }
 
-.neutralStar {
+.neutral-star {
   color: var(--main-bg-color);
 }
 
@@ -100,7 +100,7 @@ nav a:hover {
   border-width: 3px 0px 0px 0px;
   border-style: solid;
   padding: 2em 2em 0em 2em;
-  border-color:  var(--main-color);
+  border-color: var(--main-color);
 }
 
 /****** Barre de recherche ***********/
@@ -386,6 +386,9 @@ h4 {
   .main-container {
     padding: 0;
   }
+.presentation{
+  padding: 0 1em 0 1em;
+}
 
   header {
     flex-direction: column;
@@ -438,6 +441,7 @@ h4 {
 
   .filters-display {
     justify-content: center;
+    padding: 0;
   }
   .filter {
     width: 120px;
