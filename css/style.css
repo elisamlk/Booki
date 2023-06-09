@@ -61,57 +61,6 @@ body {
 
 /****** Header ***********/
 
-/* .navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.navigation img {
-  object-fit: cover;
-  width: 100px;
-}
-
-.nav-bar {
-  display: flex;
-  list-style: none;
-  width: 20em;
-  justify-content: space-between;
-}
-
-.nav-link {
- 
-  padding-top: 1.1em;
-  margin-top: -1.3em;
-  display: flex;
-  justify-content: center;
-  width: 150%;
-  text-align: center;
-}
-
-.nav-link:hover {
-  border-width: 3px 0px 0px 0px;
-  border-style: solid;
-  border-color: var(--main-color);
-  padding-top: 1.1em;
-  margin-top: -1.3em;
-  display: flex;
-  justify-content: center;
-  width: 150%;
-
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  color: var(--main-color);
-} */
-
 header {
   display: flex;
   align-items: center;
@@ -119,6 +68,7 @@ header {
 
 .logo {
   width: 70%;
+  padding-top: 1em;
 }
 
 nav {
@@ -128,12 +78,25 @@ nav {
 }
 
 .logo img {
-  width: 9em;
+  width: 8em;
 }
 
 h1 {
   margin: 50px 0 10px 0;
   font-size: 22px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 2em 1em 0em 1em;
+}
+
+nav a:hover {
+  color: var(--main-color);
+  border-width: 3px 0px 0px 0px;
+  border-style: solid;
+  padding: 2em 1em 0em 1em;
 }
 
 /****** Barre de recherche ***********/
@@ -189,6 +152,20 @@ input {
 
 .filter i {
   margin-right: 10px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.info p {
+  margin-left: 10px;
+}
+
+.info i {
+  color: var(--main-color);
 }
 
 /****** Hebergements And Populaires ***********/
@@ -396,48 +373,6 @@ h4 {
   .main-container {
     padding: 0;
   }
-  /* .navigation img {
-    padding: 20px;
-  }
-  .navigation {
-    flex-direction: column;
-  }
-  nav {
-    width: 100%;
-  }
-  .nav-link {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 20px;
-    padding-top: 0;
-    margin-top: 0;
-  }
-
-  .nav-link a {
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    border-width: 0px 0px 3px 0px;
-    border-style: solid;
-    border-color: #f2f2f2;
-  }
-
-  .nav-link a:hover {
-    color: var(--main-color);
-    border-width: 0px 0px 3px 0px;
-    border-style: solid;
-    border-color: var(--main-color);
-  }
-  .nav-bar {
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-  }
-
-  .nav-bar:hover {
-    color: var(--main-color);
-  } */
 
   header {
     flex-direction: column;
@@ -470,6 +405,7 @@ h4 {
   nav a:hover {
     color: var(--main-color);
     border-color: var(--main-color);
+    border-width: 0px 0px 3px 0px;
   }
   .search-bar {
     justify-content: center;
