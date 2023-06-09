@@ -129,6 +129,14 @@ input {
   border-bottom: solid var(--main-bg-color) 1px;
 }
 
+.fa-magnifying-glass {
+  color: white;
+}
+
+.search-icon{
+  display: none;
+}
+
 /****** Filtres ***********/
 
 .filters-display {
@@ -409,6 +417,18 @@ h4 {
   }
   .search-bar {
     justify-content: center;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  .search{
+    display: none;
+  }
+
+  .search-icon{
+    display: block;
   }
 
   .filters-display {
