@@ -89,14 +89,18 @@ h1 {
 nav a {
   text-decoration: none;
   color: black;
-  padding: 2em 1em 0em 1em;
+  padding: 2em 2em 0em 2em;
+  border-width: 3px 0px 0px 0px;
+  border-style: solid;
+  border-color: white;
 }
 
 nav a:hover {
   color: var(--main-color);
   border-width: 3px 0px 0px 0px;
   border-style: solid;
-  padding: 2em 1em 0em 1em;
+  padding: 2em 2em 0em 2em;
+  border-color:  var(--main-color);
 }
 
 /****** Barre de recherche ***********/
@@ -127,13 +131,14 @@ input {
   border: none;
   border-top: solid var(--main-bg-color) 1px;
   border-bottom: solid var(--main-bg-color) 1px;
+  width: 20%;
 }
 
 .fa-magnifying-glass {
   color: white;
 }
 
-.search-icon{
+.search-icon {
   display: none;
 }
 
@@ -423,11 +428,11 @@ h4 {
     width: 100%;
   }
 
-  .search{
+  .search {
     display: none;
   }
 
-  .search-icon{
+  .search-icon {
     display: block;
   }
 
