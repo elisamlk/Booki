@@ -9,6 +9,7 @@
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
+  --filter-color: #d9d9d9;
 }
 
 .fa-solid {
@@ -23,20 +24,20 @@ body {
 .main-container {
   width: 100%;
   max-width: 1440px;
-  padding: 0 50px;
+  padding: 0 3.125em;
   box-sizing: border-box;
 }
 
 .section-title {
   margin: 0;
-  font-size: 22px;
+  font-size: 1.375em;
 }
 
 .card {
   background-color: white;
-  border-radius: 20px;
-  padding: 5px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  border-radius: 1.25em;
+  padding: 0.3em;
+  filter: drop-shadow(0em 0.188em 1em rgba(0, 0, 0, 0.1));
 }
 
 .card img {
@@ -44,7 +45,7 @@ body {
 }
 
 .card-title {
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .euro {
@@ -56,7 +57,7 @@ body {
 }
 
 .card-content {
-  padding-left: 15px;
+  padding-left: 1em;
 }
 
 /****** Header ***********/
@@ -82,22 +83,22 @@ nav {
 }
 
 h1 {
-  margin: 50px 0 10px 0;
-  font-size: 22px;
+  margin: 3.125em 0 0.625em 0;
+  font-size: 1.375em;
 }
 
 nav a {
   text-decoration: none;
   color: black;
   padding: 2em 2em 0em 2em;
-  border-width: 3px 0px 0px 0px;
+  border-width: 0.188em 0em 0em 0em;
   border-style: solid;
   border-color: white;
 }
 
 nav a:hover {
   color: var(--main-color);
-  border-width: 3px 0px 0px 0px;
+  border-width: 0.188em 0em 0em 0em;
   border-style: solid;
   padding: 2em 2em 0em 2em;
   border-color: var(--main-color);
@@ -107,30 +108,30 @@ nav a:hover {
 
 .search-bar {
   display: flex;
-  margin: 20px 0 20px 0;
+  margin: 1.25em 0 1.25em 0;
 }
 
 .fa-location-dot {
-  padding: 15px;
+  padding: 1em;
   background-color: var(--main-bg-color);
   color: black;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 0.625em;
+  border-bottom-left-radius: 0.625em;
 }
 
 button {
   background-color: var(--main-color);
   color: white;
-  padding: 15px;
+  padding: 1em;
   border: none;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-right-radius: 0.625em;
+  border-bottom-right-radius: 0.625em;
 }
 
 input {
   border: none;
-  border-top: solid var(--main-bg-color) 1px;
-  border-bottom: solid var(--main-bg-color) 1px;
+  border-top: solid var(--main-bg-color) 0.063em;
+  border-bottom: solid var(--main-bg-color) 0.063em;
   width: 20%;
 }
 
@@ -147,16 +148,17 @@ input {
 .filters-display {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 0 20px 0;
+  margin: 1.25em 0 1.25em 0;
 }
 
 .filter {
   display: flex;
   align-items: center;
-  border: solid var(--main-bg-color) 1px;
-  padding: 10px;
-  border-radius: 20px;
-  margin-right: 15px;
+  border: solid var(--filter-color) 0.125em;
+  padding: 0.625em;
+  border-radius: 1.25em;
+  margin-right: 1em;
+  margin-bottom: 1em;
 }
 
 .filter:hover {
@@ -164,17 +166,17 @@ input {
 }
 
 .filter i {
-  margin-right: 10px;
+  margin-right: 0.625em;
 }
 
 .info {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
 }
 
 .info p {
-  margin-left: 10px;
+  margin-left: 0.625em;
 }
 
 .info i {
@@ -189,8 +191,8 @@ input {
 
 .hebergements-and-populaires section {
   background-color: var(--main-bg-color);
-  border-radius: 20px;
-  padding: 30px;
+  border-radius: 1.25em;
+  padding: 1.875em;
   box-sizing: border-box;
 }
 
@@ -200,15 +202,15 @@ input {
 }
 
 .hebergements .card {
-  margin-top: 33px;
+  margin-top: 2.063em;
   width: 31%;
 }
 
 .hebergements img {
   width: 100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  height: 100px;
+  border-top-left-radius: 1.25em;
+  border-top-right-radius: 1.25em;
+  height: 6.25em;
 }
 
 .hebergements-cards {
@@ -218,12 +220,12 @@ input {
 }
 
 .hebergements .card-title {
-  margin-top: 10px;
-  margin-bottom: 4px;
+  margin-top: 0.625em;
+  margin-bottom: 0.25em;
 }
 
 .hebergements .card-rating {
-  margin-bottom: 5px;
+  margin-bottom: 0.3em;
 }
 
 .link {
@@ -246,19 +248,19 @@ input {
 
 .populaires-cards .card {
   display: flex;
-  margin-top: 33px;
+  margin-top: 2.063em;
 }
 
 .populaires-cards img {
   width: 33%;
-  height: 136px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  height: 8.5em;
+  border-top-left-radius: 1.25em;
+  border-bottom-left-radius: 1.25em;
 }
 
 .populaires-cards .card-content {
   width: 67%;
-  padding-left: 15px;
+  padding-left: 1em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -266,8 +268,8 @@ input {
 }
 
 .populaires-cards .card-title {
-  margin-top: 10px;
-  margin-bottom: 4px;
+  margin-top: 0.625em;
+  margin-bottom: 0.25em;
 }
 
 .populaires-cards .card-subtitle {
@@ -275,12 +277,12 @@ input {
 }
 
 .populaires-cards .card-rating {
-  margin-bottom: 5px;
+  margin-bottom: 0.3em;
 }
 
 /****** Activités ***********/
 .activites {
-  padding: 30px;
+  padding: 1.875em;
   box-sizing: border-box;
 }
 
@@ -289,29 +291,33 @@ input {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 33px;
+  margin-top: 2.063em;
 }
 
-.activites-card .card {
+.activites-card .ac-card {
   width: 23%;
+  border-bottom-left-radius: 1.25em;
+  border-bottom-right-radius: 1.25em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .activites-card img {
   width: 100%;
-  height: 300px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  height: 18.75em;
+  border-top-left-radius: 1.25em;
+  border-top-right-radius: 1.25em;
+  object-fit: cover;
 }
 
 .activites-card .card-title {
-  padding: 20px;
+  padding: 1.25em;
 }
 
 /****** Footer ***********/
 footer {
   display: flex;
   background-color: var(--main-bg-color);
-  padding: 30px;
+  padding: 1.875em;
   box-sizing: border-box;
 }
 
@@ -319,19 +325,19 @@ footer ul {
   display: flex;
   flex-direction: column;
   list-style: none;
-  margin-bottom: 25px;
+  margin-bottom: 1.6em;
 }
 
 h4 {
-  margin-bottom: 10px;
+  margin-bottom: 0.625em;
 }
 
 .footer-list {
-  margin-right: 150px;
+  margin-right: 8em;
 }
 
 .footer-list li {
-  margin-bottom: 5px;
+  margin-bottom: 0.3em;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -349,7 +355,7 @@ h4 {
 
   .populaires {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 3.125em;
   }
 
   .populaires-cards {
@@ -360,24 +366,32 @@ h4 {
 
   .populaires-cards .card {
     width: 30%;
+    background-color: none;
   }
 
   .populaires-cards .card-title {
-    font-size: 14px;
+    font-size: 0.875em;
   }
 
   .populaires-cards .card-subtitle {
-    font-size: 13px;
+    font-size: 0.813em;
   }
 
   .activites-card img {
-    height: 100px;
+    height: 6.25em;
   }
   .activites-card .card-title {
     padding: 0;
-    margin-top: 10px;
-    margin-bottom: 4px;
-    padding-left: 15px;
+    margin-top: 0.625em;
+    margin-bottom: 0.25em;
+    padding-left: 1em;
+  }
+  footer {
+    justify-content: space-around;
+  }
+
+  .footer-list {
+    margin-right: 0;
   }
 }
 
@@ -386,9 +400,9 @@ h4 {
   .main-container {
     padding: 0;
   }
-.presentation{
-  padding: 0 1em 0 1em;
-}
+  .presentation {
+    padding: 0 1em 0 1em;
+  }
 
   header {
     flex-direction: column;
@@ -411,7 +425,7 @@ h4 {
     text-decoration: none;
     color: black;
     border-color: var(--main-bg-color);
-    border-width: 0px 0px 3px 0px;
+    border-width: 0em 0em 0.188em 0em;
     border-style: solid;
     padding-bottom: 2em;
     width: 50%;
@@ -421,7 +435,7 @@ h4 {
   nav a:hover {
     color: var(--main-color);
     border-color: var(--main-color);
-    border-width: 0px 0px 3px 0px;
+    border-width: 0em 0em 0.188em 0em;
   }
   .search-bar {
     justify-content: center;
@@ -444,7 +458,7 @@ h4 {
     padding: 0;
   }
   .filter {
-    width: 120px;
+    width: 7.5em;
   }
 
   .populaires-cards {
@@ -459,9 +473,9 @@ h4 {
     width: 100%;
   }
 
-  .activites-card .card {
+  .activites-card .ac-card {
     width: 100%;
-    margin-top: 33px;
+    margin-top: 2.063em;
   }
 
   footer {
